@@ -14,4 +14,6 @@ of calculation.
 It segfaults for me when I try numbers near a billion- probably just because calculating
 primes below a billion would take +3GB just to hold the data (stored as longs).
 
-This program isn't super fast, but I love the algorithm. 
+This program isn't super fast, but I love the algorithm.
+
+More info on the Sieve of Eratosthenes at [its Wikipedia page.](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
