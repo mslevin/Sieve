@@ -29,8 +29,9 @@ calculate primes up to (non-inclusive) the entered number.
 It also prompts for whether or not you want to print the output. It prints in chunks
 beause it prints "when it finds the primes".
 
-The program also gives you the calculation time- this will be much higher if
-you print the results. Of course, then its somewhat useless.
+The program also gives you the calculation time. Printing the output and counting the 
+number of primes (which is done in a terrible way) doesn't affect the time to calculate
+the primes, but it will, obviously, take longer for the whole program to run.
 
 *There was another printing method in there, but I removed it because I'm an idiot.*
 
