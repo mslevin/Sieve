@@ -1,3 +1,8 @@
+The Sieve of Eratosthenes
+=========================
+
+
+
 An implementation of the Sieve of Eratosthenes in C. 
 
 To use: compile (use -lm with gcc) and run the executable. The pogram will 
