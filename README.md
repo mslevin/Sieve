@@ -7,6 +7,14 @@ The Sieve of Eratosthenes
 >any given limit. It does so by iteratively marking as composite (i.e. not 
 >prime) the multiples of each prime, starting with the multiples of 2.
 
+>*Algorithm Description*
+>To find all the prime numbers less than or equal to a given 
+>integer n by Eratosthenes method:
+> 1. Create a list of consecutive integers from 2 through *n*: (2, 3, 4, ..., *n*).
+> 2. Initially, let *p* equal 2, the first prime number.
+> 3. Starting from p, enumerate its multiples by counting to *n* in increments of *p*, and mark them in the list
+> 4. Find the number greater than *p* in the list that is not marked. If there is no such number, stop. Otherwise, let *p* now equal this new number (which is the next prime), and repeat from step 3.
+
 ---
 
 An implementation of the Sieve of Eratosthenes in C. 
