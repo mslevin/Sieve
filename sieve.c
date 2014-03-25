@@ -10,7 +10,7 @@ typedef struct Number {
 
 int main() {
    int max, mult = 1;
-   int print, i, j;
+   int print, i, j, count = 0;
    Number *list;
    clock_t begin, end;
    double time;
@@ -26,7 +26,7 @@ int main() {
       list[i].num = i;
       list[i].true = 1;
    }  
-
+   
    begin = clock(); // for timing
 
    /* This is the actual algorithm!
@@ -42,19 +42,22 @@ int main() {
    
    end = clock(); // for timing
    
-   if(print) {
+   if (print)
       printf("\nPrime numbers below %d:\n", max);
-      for(i = 0; i < max; i++) {
-         if(list[i].true) {
-            printf("%d ", list[i].num);
-         }
-      }  
+   for(i = 0; i < max; i++) {
+      if(list[i].true) {
+         if (print)
+            printf("%d\n", list[i].num);
+         count++;
+      }
+   } 
+   if (print)
       printf("\n");
-   }   
    
    time = (double)(end - begin) / CLOCKS_PER_SEC;
 
    printf("Calculation time: %.4lf seconds\n", time);
+   printf("Total primes: %d\n", count);
 
    return 0;
 }
