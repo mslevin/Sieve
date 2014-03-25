@@ -5,7 +5,7 @@
 
 typedef struct Number {
    long num;
-   int true; 
+   int true; // true = prime/unchecked, false = non-prime
 } Number;
 
 int main() {
@@ -27,7 +27,11 @@ int main() {
       list[i].true = 1;
    }  
 
-   begin = clock();
+   begin = clock(); // for timing
+
+
+   /* This is the actual algorithm!
+    * Printing stuff is included here as well */
    for(i = 2; i < sqrt(max); i++) {
       if(list[i].true) {
          if(print) printf("%ld ", list[i].num);
@@ -38,7 +42,8 @@ int main() {
       }
    }
    if(print) printf("\n");
-   end = clock();
+   
+   end = clock(); // for timing
    
    /*
    if(print) {
